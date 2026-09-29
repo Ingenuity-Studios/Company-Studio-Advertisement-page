@@ -1,0 +1,542 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Forecourt by Ingenuity Studio — Your lot is full. Your feed is empty.</title>
+<meta name="description" content="Forecourt is the AI video pipeline for used-car dealers. It picks the car, writes the script, and turns 20 seconds of raw phone footage into a publish-ready video in about 20 minutes. Now onboarding free two-week pilot dealers.">
+<meta property="og:title" content="Forecourt — the classified ad that films itself">
+<meta property="og:description" content="The AI video pipeline for used-car dealers. The machine decides what to film. Your part is capped at 20 minutes. Free two-week pilot for the first five dealers.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/img/lot-rows.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#121110">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23121110'/%3E%3Crect x='6' y='6' width='52' height='52' fill='none' stroke='%23c8102e' stroke-width='3'/%3E%3Ctext x='32' y='44' font-family='Georgia,serif' font-size='32' font-weight='bold' fill='%23f5f2eb' text-anchor='middle'%3EF%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,400;1,9..144,600&family=Archivo:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<a class="skip-link" href="#hero">Skip to content</a>
+
+<!-- ============================= NAV ============================= -->
+<header class="nav" id="top">
+  <div class="nav-inner">
+    <a class="wordmark" href="#top" aria-label="Ingenuity Studio — home">
+      <span class="wm-ink">INGENUITY</span><span class="wm-rule" aria-hidden="true"></span><span class="wm-sub">STUDIO</span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#problem">The&nbsp;Gap</a>
+      <a href="#how">How&nbsp;it&nbsp;works</a>
+      <a href="#features">Features</a>
+      <a href="#roi">ROI&nbsp;Calculator</a>
+      <a href="#pilot" class="nav-cta">Free&nbsp;Pilot</a>
+    </nav>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <nav class="nav-links mobile" id="mobile-nav" aria-label="Mobile">
+    <a href="#problem">The Gap</a>
+    <a href="#how">How it works</a>
+    <a href="#features">Features</a>
+    <a href="#compare">vs. Editors &amp; Suites</a>
+    <a href="#roi">ROI Calculator</a>
+    <a href="#pilot">Free Pilot</a>
+    <a href="#faq">FAQ</a>
+  </nav>
+</header>
+
+<!-- ============================= HERO: THE CLASSIFIED AD ============================= -->
+<main id="main">
+<section class="hero" id="hero" aria-label="Forecourt — the classified ad">
+  <div class="paper-noise" aria-hidden="true"></div>
+
+  <div class="masthead">
+    <div class="mh-side mh-left">
+      <span class="mh-line">SECTION F · TRANSPORT</span>
+      <span class="mh-line">CLASSIFIEDS &amp; NOTICES</span>
+    </div>
+    <div class="mh-center">
+      <span class="mh-fore">FORECOURT</span>
+      <span class="mh-byline">an Ingenuity Studio product</span>
+    </div>
+    <div class="mh-side mh-right">
+      <span class="mh-line" id="dateline">VOL. I — MMXXVI</span>
+      <span class="mh-line mh-live"><span class="pulse" aria-hidden="true"></span>AD AUTO-REWRITTEN <span id="rewrite-timer">00:00:00</span></span>
+    </div>
+  </div>
+
+  <div class="ad-frame">
+    <div class="ad-inner">
+      <div class="ad-head">
+        <span class="ad-kicker">CLASSIFIED · FOR SALE · <span id="ad-cat">SEDAN</span></span>
+        <span class="ad-stamp">SPECIMEN</span>
+      </div>
+
+      <div class="ad-body">
+        <div class="ad-copy">
+          <h1 class="ad-headline">
+            Your lot is full.<br>
+            <em>Your feed is empty.</em>
+          </h1>
+
+          <p class="ad-lede">
+            <strong>FORECOURT</strong> — the machine that writes tomorrow's ad, picks tomorrow's car,
+            and edits tomorrow's video. You film <span class="red">20 seconds</span> on any phone. That's the whole human job.
+            Publish-ready everywhere in <span class="red">~20 minutes.</span>
+          </p>
+
+          <dl class="listing" aria-label="Illustrative sample listing, rotates automatically">
+            <div class="list-row"><dt>TODAY'S PICK</dt><dd class="dot-leader"><span id="list-car">2019 Civic Sport · 62,140 mi</span></dd></div>
+            <div class="list-row"><dt>THE HOOK</dt><dd class="dot-leader"><span id="list-hook">“Runs like the day it left the lot.”</span></dd></div>
+            <div class="list-row"><dt>FORMAT</dt><dd class="dot-leader"><span id="list-format">Vertical Reel · 0:22 · captions burned in</span></dd></div>
+            <div class="list-row"><dt>POSTED TO</dt><dd class="dot-leader"><span id="list-posted">Instagram · YouTube Shorts · TikTok</span></dd></div>
+          </dl>
+
+          <div class="ad-cta">
+            <a class="btn btn-ink" href="#pilot">Claim a free two-week pilot</a>
+            <a class="btn btn-ghost" href="#how">Read the terms ↓</a>
+          </div>
+
+          <p class="ad-fine">Illustrative specimen listing — no real vehicle is being offered here. Forecourt rewrites this ad on a timer. That's the product.</p>
+        </div>
+
+        <figure class="ad-photo">
+          <div class="photo-frame">
+            <img src="assets/img/lot-rows.jpg" alt="Rows of used cars parked on a dealership lot in daylight" class="kenburns" width="1600" height="1600" loading="eager">
+          </div>
+          <figcaption class="price-tag"><span id="price-tag">$18,900</span><small>or ~$0/mo to make the video</small></figcaption>
+        </figure>
+      </div>
+
+      <div class="ad-foot">
+        <span class="ad-dots" id="ad-dots" aria-hidden="true"></span>
+        <span class="ad-note">Pilot dealers being onboarded now · five slots</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="tape tape-ink" aria-hidden="true">
+    <div class="tape-track">
+      <span>THE FEED IS EMPTY ▸ 44B+ #CarTok views ▸ not one of them yours ▸ winning dealers post every workday ▸ most independents can't ▸ until the machine does it ▸</span>
+      <span>THE FEED IS EMPTY ▸ 44B+ #CarTok views ▸ not one of them yours ▸ winning dealers post every workday ▸ most independents can't ▸ until the machine does it ▸</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= STATS BAND ============================= -->
+<section class="stats" id="stats" aria-label="The market, in numbers">
+  <div class="stats-head">
+    <span class="rule-label">THE MARKET, IN FIGURES</span>
+    <span class="rule-note">All sourced. No rounding up.</span>
+  </div>
+  <div class="stat-grid">
+    <div class="stat-slab reveal">
+      <div class="stat-num"><span class="count" data-to="41" data-suffix="%">0%</span></div>
+      <div class="stat-cap">more lead forms on listings that carry video</div>
+      <div class="stat-src">Cox Automotive</div>
+    </div>
+    <div class="stat-slab reveal">
+      <div class="stat-num"><span class="count" data-to="3.2" data-suffix="×" data-decimals="1">0×</span></div>
+      <div class="stat-cap">up to 3.2× VDP conversion with video on the listing</div>
+      <div class="stat-src">Cox Automotive</div>
+    </div>
+    <div class="stat-slab reveal">
+      <div class="stat-num"><span class="count" data-to="95" data-suffix="%">0%</span></div>
+      <div class="stat-cap">of dealership sales reps still don't use video tools</div>
+      <div class="stat-src">Industry research (Cox)</div>
+    </div>
+    <div class="stat-slab reveal">
+      <div class="stat-num"><span class="count" data-to="44" data-suffix="B+">0B+</span></div>
+      <div class="stat-cap">views under #CarTok — buyers are watching car video already</div>
+      <div class="stat-src">#CarTok, TikTok</div>
+    </div>
+  </div>
+  <p class="stats-foot">And a note from the ledger: on dealer audiences, social-video cost-per-lead runs well under Google Ads. <span class="muted">(Attribution light, on purpose.)</span></p>
+</section>
+
+<!-- ============================= THE PROBLEM ============================= -->
+<section class="problem" id="problem">
+  <div class="section-masthead">
+    <span class="sm-no">№ 01</span>
+    <h2 class="sm-title">The Gap</h2>
+    <span class="sm-rule" aria-hidden="true"></span>
+  </div>
+  <div class="problem-grid">
+    <div class="problem-copy reveal">
+      <p class="pull-quote">Every one of your cars has a photo.<br><em>Almost none of them have a video.</em></p>
+      <p>The modern car buyer scrolls Reels and Shorts the way they used to walk your lot — slowly, comparing, getting a feel. That walk now happens on a feed that moves 44&nbsp;billion times over, and your dealership isn't on it.</p>
+      <p>Not because you don't want to be. Because posting video every workday means someone has to <strong>choose the car, write what to say, shoot it, edit it, and remember to post it</strong> — and your best salesperson is already selling.</p>
+      <p>The studios that promise to fix this want skills and setup your shop floor won't do. The editors are great — for a human with three spare hours a video.</p>
+      <p class="red-p"><strong>Winning dealers post every workday. Most independents can't. That gap is the product.</strong></p>
+      <figure class="inline-photo reveal">
+        <div class="photo-frame">
+          <img src="assets/img/lot-aerial.jpg" alt="Aerial view of a dealership lot packed with parked used cars" loading="lazy" width="1600" height="1200">
+        </div>
+        <figcaption>Your inventory, photographed and parked. The feed it should own? Quiet.</figcaption>
+      </figure>
+    </div>
+    <aside class="problem-side">
+      <div class="side-card reveal">
+        <span class="side-label">WHAT IT COSTS YOU TODAY</span>
+        <ul class="cost-list">
+          <li><b>$10–16/hr</b><span>a hired creator, per caption and cut</span></li>
+          <li><b>$500–3,000/mo</b><span>an agency retainer, per "engagement" promise</span></li>
+          <li><b>60–90 min</b><span>in CapCut per video — your staff's evening</span></li>
+          <li><b>0</b><span>videos posted last week, honestly</span></li>
+        </ul>
+      </div>
+      <div class="side-card dark reveal">
+        <span class="side-label">WHAT'S ON THE FEED INSTEAD</span>
+        <p class="big-44">44B+</p>
+        <span class="side-note">#CarTok views, and the algorithm doesn't know your name.</span>
+      </div>
+    </aside>
+  </div>
+</section>
+
+<!-- ============================= HOW IT WORKS ============================= -->
+<section class="how" id="how">
+  <div class="section-masthead invert">
+    <span class="sm-no">№ 02</span>
+    <h2 class="sm-title">How the machine works</h2>
+    <span class="sm-rule" aria-hidden="true"></span>
+  </div>
+  <p class="how-lede">Five columns, in order of the work. Read them left to right; you do the fourth one.</p>
+  <div class="steps">
+    <article class="step reveal">
+      <div class="step-no">1</div>
+      <h3>Drop in your inventory</h3>
+      <p>Every car, every stat, straight from your DMS or spreadsheet. One upload. The machine reads VINs, trims, and mileage so you don't retype them into captions.</p>
+      <figure class="step-photo">
+        <div class="photo-frame"><img src="assets/img/lot-row2.jpg" alt="A row of used sedans parked on a dealership lot" loading="lazy" width="1600" height="1067"></div>
+        <figcaption>Your spreadsheet, but photogenic.</figcaption>
+      </figure>
+    </article>
+    <article class="step reveal">
+      <div class="step-no">2</div>
+      <h3>Connect your socials</h3>
+      <p>Instagram, YouTube, TikTok — once, with API keys. Your accounts, your passwords, your brand. Nothing posts without your queue.</p>
+    </article>
+    <article class="step reveal">
+      <div class="step-no">3</div>
+      <h3>The system decides</h3>
+      <p>Which car, what to say, which format — tuned to what your community actually watches and what's trending this week. You didn't pick the car. It did.</p>
+      <figure class="step-photo">
+        <div class="photo-frame"><img src="assets/img/showroom-night.jpg" alt="Showroom cars under night lighting" loading="lazy" width="1600" height="1067"></div>
+        <figcaption>Tonight's pick, chosen by watch-time — not by whoever remembers to post.</figcaption>
+      </figure>
+    </article>
+    <article class="step reveal">
+      <div class="step-no">4</div>
+      <h3>Your staff films 20 seconds</h3>
+      <p>Raw phone footage. Walk the car, talk the hook the machine wrote. No creators required — any staffer with a phone runs it.</p>
+      <figure class="step-photo">
+        <div class="photo-frame"><img src="assets/img/filming-phone.jpg" alt="A person filming with a smartphone on a car lot" loading="lazy" width="1600" height="2400"></div>
+        <figcaption>The entire human job: twenty seconds, one take, done.</figcaption>
+      </figure>
+    </article>
+    <article class="step reveal">
+      <div class="step-no">5</div>
+      <h3>~20 minutes later, it ships</h3>
+      <p>A finished, publish-ready video — vertical-first for Reels, TikTok and Shorts, plus a landscape cut that's VDP-ready. Auto-posted or queued. Then the analytics feed tomorrow's pick.</p>
+    </article>
+  </div>
+
+  <div class="pipeline-strip reveal" role="img" aria-label="Illustrative diagram of the Forecourt pipeline: inventory in, machine decides, staff film 20 seconds, video out to all platforms, analytics back to the decision.">
+    <div class="pipe-box">INVENTORY<br>+ TRENDS</div>
+    <div class="pipe-arrow">→</div>
+    <div class="pipe-box red-box">THE MACHINE<br>DECIDES</div>
+    <div class="pipe-arrow">→</div>
+    <div class="pipe-box">STAFF FILM<br>0:20</div>
+    <div class="pipe-arrow">→</div>
+    <div class="pipe-box">RENDER<br>~20 MIN</div>
+    <div class="pipe-arrow">→</div>
+    <div class="pipe-box">IG · YT · TT<br>+ VDP</div>
+    <div class="pipe-loop">↺ analytics feed the next pick</div>
+    <span class="pipe-note">Illustrative diagram — the real pipeline runs in your stack, not a dashboard screenshot.</span>
+  </div>
+</section>
+
+<!-- ============================= FEATURES ============================= -->
+<section class="features" id="features">
+  <div class="section-masthead">
+    <span class="sm-no">№ 03</span>
+    <h2 class="sm-title">What's under the hood</h2>
+    <span class="sm-rule" aria-hidden="true"></span>
+  </div>
+  <div class="feat-grid">
+    <article class="feat reveal">
+      <h3><span class="feat-no">01</span> Trend-driven car selection</h3>
+      <p>The machine watches what your community finishes, rewatches, and shares — and points the camera at the car most likely to earn it. A slow mover with a hot search trend beats a fast mover with nothing to say.</p>
+    </article>
+    <article class="feat reveal">
+      <h3><span class="feat-no">02</span> VIN-aware scripts</h3>
+      <p>Trim, mileage, options, price — read from the vehicle itself and worked into a script that sounds like your best closer, not a template. The hook line up top? That's the machine's handwriting.</p>
+    </article>
+    <article class="feat reveal">
+      <h3><span class="feat-no">03</span> One-to-many publishing</h3>
+      <p>Film once. Out come the 9:16 reel, the Shorts cut, the TikTok version, and the landscape embed for your VDP. Sized, captioned, and queued across platforms in one motion.</p>
+    </article>
+    <article class="feat reveal">
+      <h3><span class="feat-no">04</span> The analytics loop</h3>
+      <p>Watch-time and leads close the loop. What buyers watched tonight changes what gets filmed tomorrow. A feed that learns beats a feed that posts.</p>
+    </article>
+    <article class="feat reveal">
+      <h3><span class="feat-no">05</span> No creators required</h3>
+      <p>No videographer, no editor, no "social person." The decision-making is the software's; the twenty seconds is anyone's. Your front desk can run it on a Tuesday.</p>
+    </article>
+    <article class="feat muted reveal">
+      <h3><span class="feat-no">06</span> Auto-translation <span class="soon">FUTURE</span></h3>
+      <p>Queued next: one script, many markets — Spanish-first cuts for the lots that need them. On the roadmap, not yet in the pilot.</p>
+    </article>
+  </div>
+</section>
+
+<!-- ============================= FULL-BLEED BREAK ============================= -->
+<section class="break" aria-label="The twenty minute rule">
+  <div class="break-bg">
+    <img src="assets/img/wheel-closeup.jpg" alt="Close-up of an alloy car wheel and tire" loading="lazy" width="1600" height="2134">
+  </div>
+  <div class="break-copy">
+    <p class="break-line">Twenty minutes.</p>
+    <p class="break-sub">That's the cap on your part of the deal — from the first second of raw footage to a finished video on the feed. Everything else is the machine's.</p>
+  </div>
+</section>
+
+<!-- ============================= COMPETITIVE ============================= -->
+<section class="compare" id="compare">
+  <div class="section-masthead">
+    <span class="sm-no">№ 04</span>
+    <h2 class="sm-title">The zero-edit gap</h2>
+    <span class="sm-rule" aria-hidden="true"></span>
+  </div>
+  <p class="compare-lede">Three ways dealers do video today. Two of them are still hiring. (Competitor names are theirs, used for plain comparison.)</p>
+  <div class="compare-cols">
+    <article class="cmp reveal">
+      <h3>Editors <small>CapCut · Canva</small></h3>
+      <ul>
+        <li class="yes">Fine tools</li>
+        <li class="no">A human chooses the car</li>
+        <li class="no">A human writes the script</li>
+        <li class="no">A human edits every cut</li>
+        <li class="no">A human remembers to post</li>
+      </ul>
+      <p class="cmp-verdict">Four decisions still land on your staff — every video, every day. 60–90 minutes each.</p>
+    </article>
+    <article class="cmp reveal">
+      <h3>Enterprise suites <small>Impel · CARVID · Spyne</small></h3>
+      <ul>
+        <li class="yes">Powerful back ends</li>
+        <li class="no">Demand staff skill</li>
+        <li class="no">Demand setup your shop won't do</li>
+        <li class="no">Built for fleets, not independents</li>
+      </ul>
+      <p class="cmp-verdict">The tools work if you already have the team. That was the problem, not the premise.</p>
+    </article>
+    <article class="cmp cmp-fore reveal">
+      <h3>Forecourt <small>this ad is about us</small></h3>
+      <ul>
+        <li class="yes">The machine picks the car</li>
+        <li class="yes">The machine writes the script</li>
+        <li class="yes">The machine edits every cut</li>
+        <li class="yes">The machine handles the posting</li>
+        <li class="yes">Your part: 20 seconds of phone footage</li>
+      </ul>
+      <p class="cmp-verdict">The zero-edit, no-creators-required option. <strong>Now onboarding pilot dealers.</strong></p>
+    </article>
+  </div>
+  <div class="tape tape-red" aria-hidden="true">
+    <div class="tape-track">
+      <span>ONE-OTHER THING ▸ a reeled-in lead answers your texts ▸ social-video CPL undercuts search on dealer audiences ▸ the buyer is already watching ▸ ▸</span>
+      <span>ONE-OTHER THING ▸ a reeled-in lead answers your texts ▸ social-video CPL undercuts search on dealer audiences ▸ the buyer is already watching ▸ ▸</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= ROI CALCULATOR ============================= -->
+<section class="roi" id="roi">
+  <div class="section-masthead invert">
+    <span class="sm-no">№ 05</span>
+    <h2 class="sm-title">The ROI column</h2>
+    <span class="sm-rule" aria-hidden="true"></span>
+  </div>
+  <div class="roi-grid">
+    <div class="roi-copy reveal">
+      <p class="roi-pull">Your current costs<br><em>vs. a free pilot.</em></p>
+      <p>This calculator does the honest math on the status quo — the creator rate you actually pay, the agency retainer on your books, the hours your staff lose to CapCut. Forecourt's side of the column is simple: the two-week pilot is free. Full stop. Pilot pricing is discussed with pilot dealers, not printed here.</p>
+      <p class="muted small">Sliders move the numbers live. Nothing you type is stored or sent anywhere — this runs entirely in your browser.</p>
+      <form class="roi-form" id="roi-form" aria-label="ROI calculator inputs">
+        <fieldset>
+          <legend>Who makes your videos today?</legend>
+          <label class="radio"><input type="radio" name="roi-mode" value="creator" checked> A staffer or hired creator ($/hr)</label>
+          <label class="radio"><input type="radio" name="roi-mode" value="agency"> An agency (monthly retainer)</label>
+        </fieldset>
+        <div class="field-row">
+          <label for="roi-videos">Videos posted per week
+            <output id="out-videos" for="roi-videos">5</output>
+          </label>
+          <input type="range" id="roi-videos" min="1" max="25" step="1" value="5">
+        </div>
+        <div class="field-row" data-mode="creator">
+          <label for="roi-mins">Minutes per video, start to posted <span class="hint">(CapCut reality: 60–90)</span>
+            <output id="out-mins" for="roi-mins">75</output>
+          </label>
+          <input type="range" id="roi-mins" min="10" max="120" step="5" value="75">
+        </div>
+        <div class="field-row" data-mode="creator">
+          <label for="roi-rate">Creator rate ($/hr)
+            <output id="out-rate" for="roi-rate">$13</output>
+          </label>
+          <input type="range" id="roi-rate" min="10" max="16" step="1" value="13">
+        </div>
+        <div class="field-row" data-mode="agency" hidden>
+          <label for="roi-retainer">Agency retainer ($/month)
+            <output id="out-retainer" for="roi-retainer">$1,500</output>
+          </label>
+          <input type="range" id="roi-retainer" min="500" max="3000" step="50" value="1500">
+        </div>
+      </form>
+    </div>
+
+    <div class="roi-readout reveal" aria-live="polite">
+      <div class="ro-row">
+        <div class="ro-label">Your video bill, monthly</div>
+        <div class="ro-num" id="ro-cost">$0</div>
+      </div>
+      <div class="ro-row">
+        <div class="ro-label">Staff hours burned, monthly</div>
+        <div class="ro-num" id="ro-hours">0<span class="ro-unit">hr</span></div>
+      </div>
+      <div class="ro-row ro-fore">
+        <div class="ro-label">During the free two-week pilot</div>
+        <div class="ro-num">$0<span class="ro-unit">— and ~0 hr of your staff's evening</span></div>
+      </div>
+      <div class="ro-row">
+        <div class="ro-label">Over twelve months at these settings</div>
+        <div class="ro-num ro-yr" id="ro-year">$0</div>
+      </div>
+      <p class="ro-foot" id="ro-assume">Assumes 4.33 weeks per month. Video: ~20 min of phone footage per car, done between customers.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= PILOT ============================= -->
+<section class="pilot" id="pilot">
+  <div class="section-masthead">
+    <span class="sm-no">№ 06</span>
+    <h2 class="sm-title">What a pilot dealer gets</h2>
+    <span class="sm-rule" aria-hidden="true"></span>
+  </div>
+  <div class="coupon reveal">
+    <div class="coupon-main">
+      <span class="coupon-kicker">THE OFFER · NO CARD, NO CONTRACT</span>
+      <h3 class="coupon-head">A free two-week pilot. <em>Five slots.</em></h3>
+      <ul class="coupon-list">
+        <li>Your inventory in the machine, your socials connected, first videos shipped — inside the two weeks.</li>
+        <li>The system picks, scripts and posts; any staffer films the 20 seconds.</li>
+        <li>Vertical-first cuts plus a VDP-ready landscape version of everything.</li>
+        <li>Analytics from your real accounts, reviewed together at the end of the fortnight.</li>
+        <li>You keep every video we make, win or lose the trial.</li>
+      </ul>
+      <div class="coupon-cta">
+        <a class="btn btn-red" href="mailto:pilots@ingenuitystudio.example?subject=Forecourt%20pilot%20-%20claim%20a%20slot">Claim a slot by email</a>
+        <span class="coupon-fine">We'll reply with a 15-minute setup call. Pilot onboarding is open now.</span>
+      </div>
+    </div>
+    <div class="coupon-stub">
+      <img src="assets/img/keys-handover.jpg" alt="A handover of car keys between two people" loading="lazy" width="1600" height="2400">
+      <span>NO.&nbsp;5&nbsp;/&nbsp;5</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= STUDIO LINE ============================= -->
+<section class="studio" aria-label="About the studio">
+  <div class="studio-inner reveal">
+    <span class="studio-mark">INGENUITY STUDIO</span>
+    <p>From Ingenuity Studio — a small, sharp AI product shop built by Joel, Akarsh and Prem. Also behind <a class="link-ink" href="https://clip-studio.example" rel="noopener">clip-studio</a>, the self-serve gaming-montage editor. Forecourt is our first bet for the lot.</p>
+  </div>
+</section>
+
+<!-- ============================= FAQ ============================= -->
+<section class="faq" id="faq">
+  <div class="section-masthead">
+    <span class="sm-no">№ 07</span>
+    <h2 class="sm-title">Questions from the desk</h2>
+    <span class="sm-rule" aria-hidden="true"></span>
+  </div>
+  <div class="faq-list">
+    <details class="faq-item reveal">
+      <summary><span>Do I need a videographer?</span><i class="faq-plus" aria-hidden="true"></i></summary>
+      <div class="faq-a"><p>No. That's the point. Any staffer with a phone can film the 20 seconds — walking the car, reading the hook the machine wrote. There's no creator to hire and no editing skill to find.</p></div>
+    </details>
+    <details class="faq-item reveal">
+      <summary><span>Whose footage is it?</span><i class="faq-plus" aria-hidden="true"></i></summary>
+      <div class="faq-a"><p>Yours. Every frame comes from your lot and your phones; every finished video comes out of your pipeline. Pilot or not, you keep everything we make together.</p></div>
+    </details>
+    <details class="faq-item reveal">
+      <summary><span>What about my platforms?</span><i class="faq-plus" aria-hidden="true"></i></summary>
+      <div class="faq-a"><p>Instagram, YouTube and TikTok connect once, through your API keys — your accounts, your login. Posts go out on your schedule, auto-posted or queued for your review, plus a landscape cut sized for your VDPs.</p></div>
+    </details>
+    <details class="faq-item reveal">
+      <summary><span>How fast, really?</span><i class="faq-plus" aria-hidden="true"></i></summary>
+      <div class="faq-a"><p>About 20 minutes from raw phone footage to publish-ready video, most days. The deciding — which car, what hook, which format — happens before you've had coffee.</p></div>
+    </details>
+    <details class="faq-item reveal">
+      <summary><span>What does it cost?</span><i class="faq-plus" aria-hidden="true"></i></summary>
+      <div class="faq-a"><p>The two-week pilot is free — no card, no contract. After the pilot we'd discuss pricing with you directly; we're not printing a number here that we haven't agreed with a dealer yet. The ROI column above prices the thing you're already paying for instead.</p></div>
+    </details>
+    <details class="faq-item reveal">
+      <summary><span>Is this live everywhere today?</span><i class="faq-plus" aria-hidden="true"></i></summary>
+      <div class="faq-a"><p>It's in pilot — that's who you'd be first. Forecourt runs on a dealer's real inventory and real accounts during the two weeks, and the pilot dealers' results are what we're building the next version from.</p></div>
+    </details>
+  </div>
+</section>
+
+<!-- ============================= FINAL CTA ============================= -->
+<section class="final" id="get-started">
+  <div class="final-bg" aria-hidden="true">
+    <img src="assets/img/city-dusk.jpg" alt="" loading="lazy" width="1600" height="1067">
+  </div>
+  <div class="final-inner reveal">
+    <p class="final-kicker">CLASSIFIED · LAST PAGE</p>
+    <h2 class="final-head">Sell the next car<br><em>on the feed.</em></h2>
+    <p class="final-sub">Five free two-week pilot slots for the first dealers. Your lot is full; let's empty the excuse.</p>
+    <a class="btn btn-red btn-big" href="mailto:pilots@ingenuitystudio.example?subject=Forecourt%20pilot%20-%20claim%20a%20slot">Claim a free pilot slot</a>
+  </div>
+</section>
+</main>
+
+<!-- ============================= FOOTER ============================= -->
+<footer class="footer" id="colophon">
+  <div class="foot-grid">
+    <div class="foot-brand">
+      <span class="foot-mark">FORECOURT</span>
+      <p class="foot-by">by Ingenuity Studio — Joel · Akarsh · Prem<br>Flagship product. Pilot dealers onboarding now.</p>
+    </div>
+    <nav class="foot-links" aria-label="Footer">
+      <a href="#top">Top of page ↑</a>
+      <a href="#how">How it works</a>
+      <a href="#roi">ROI calculator</a>
+      <a href="#pilot">The pilot</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="foot-src">
+      <span class="foot-head">SOURCES &amp; COLOPHON</span>
+      <p>Video-in-listing lift (+41% lead forms, up to 3.2× VDP conversion) and the 95%-don't-use-video figure: Cox Automotive. #CarTok view count: TikTok. Creator and agency rates: market ranges as stated. Social-video CPL comparison: directional, attribution light by design.</p>
+      <p>Photography via Unsplash; full credit ledger in <code>assets/CREDITS.md</code>. Set in Fraunces &amp; Archivo. This page is a static advertisement — it sells a machine that writes ads, so we wrote this one like the product.</p>
+    </div>
+  </div>
+  <div class="foot-bar">
+    <span>© <span id="year">2026</span> Ingenuity Studio</span>
+    <span>No cookies. No trackers. No “we couldn't reach the page.”</span>
+    <span>END OF ADVERTISEMENT ▮</span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
