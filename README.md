@@ -15,12 +15,14 @@ open index.html                       # just open it
 python3 -m http.server 8000           # or serve, then http://localhost:8000
 ```
 
-- `index.html` — primary design ("dark-cinematic"): cinematic lot-at-dusk imagery,
-  the 20-minute pipeline story, feature grid, competitive positioning, and an
-  interactive honest ROI calculator.
-- `preview/classified/index.html` — alternate creative direction ("the classifieds
-  spread"): the whole page styled as this week's dealership newspaper. Keep or kill
-  as a concept test.
+- `index.html` — **shipped design (editorial classifieds)**: the whole page set as a
+  dealership newspaper spread — newsprint paper, ink black and classified red, a
+  self-rewriting specimen ad as the hero, the 20-minute pipeline story, feature
+  grid, competitive positioning, and an interactive honest ROI calculator.
+- `preview/classified/index.html` — **alternate dark-cinematic design** (asphalt-black
+  surfaces, amber accent, a day-in-the-life pipeline timeline) built during the same
+  sprint and kept in the tree as a visual reference. Its files are self-contained
+  under `preview/`. Not linked from the live page.
 
 ## What we claim (and where it comes from)
 
@@ -30,7 +32,7 @@ Every statistic is real, public market evidence — never a fabricated result:
 |---|---|
 | Listings with video: +41% lead forms, up to 3.2× VDP conversion | Cox Automotive |
 | ~95% of dealership sales reps still don't use video tools | Cox / industry research |
-| #CarTok: tens of billions of views | TikTok hashtag data |
+| #CarTok: 44 billion+ views | TikTok hashtag data |
 | Status quo costs: creators $10–16/hr, agencies $500–$3,000/mo, 60–90 min per video | prevailing freelance/agency rates |
 
 House honesty rules: no invented testimonials, customers, logos, pricing, or product

@@ -96,7 +96,7 @@
     dots: document.getElementById('ad-dots')
   };
   if (els.car && els.cat) {
-    var idx = 0, adTimer = null, t0rewrite = Date.now();
+    var idx = 0, adTimer = null, t0rewrite = Date.now(), pausedAt = null;
     if (els.dots) {
       ads.forEach(function (_, i) {
         var d = document.createElement('i');
@@ -127,8 +127,14 @@
       paintDots();
       t0rewrite = Date.now();
     }
-    function startAd() { adTimer = setInterval(rewrite, 7000); }
-    function stopAd() { if (adTimer) { clearInterval(adTimer); adTimer = null; } }
+    function startAd() {
+      if (pausedAt !== null) { t0rewrite += Date.now() - pausedAt; pausedAt = null; }
+      adTimer = setInterval(rewrite, 7000);
+    }
+    function stopAd() {
+      if (adTimer) { clearInterval(adTimer); adTimer = null; }
+      pausedAt = Date.now();
+    }
     startAd();
     document.addEventListener('visibilitychange', function () {
       if (document.hidden) stopAd(); else if (!adTimer) startAd();
@@ -139,10 +145,12 @@
     var rt = document.getElementById('rewrite-timer');
     if (rt) {
       setInterval(function () {
-        var s = Math.floor((Date.now() - t0rewrite) / 1000);
-        var mm = String(Math.floor(s / 60)).padStart(2, '0');
+        if (pausedAt !== null) return; // frozen while the ad is paused — timer only runs live
+        var s = Math.max(0, Math.floor((Date.now() - t0rewrite) / 1000));
+        var hh = String(Math.floor(s / 3600)).padStart(2, '0');
+        var mm = String(Math.floor((s % 3600) / 60)).padStart(2, '0');
         var ss = String(s % 60).padStart(2, '0');
-        rt.textContent = '00:' + mm + ':' + ss;
+        rt.textContent = hh + ':' + mm + ':' + ss;
       }, 1000);
     }
   }
