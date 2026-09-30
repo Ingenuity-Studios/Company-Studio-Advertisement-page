@@ -7,6 +7,16 @@ product site.
 
 ## View it
 
+**Live sites (GitHub Pages):**
+
+| Site | URL |
+|---|---|
+| Shipped design (editorial classifieds) | https://ingenuity-studios.github.io/Company-Studio-Advertisement-page/ |
+| Alternate dark-cinematic design | https://ingenuity-studios.github.io/Company-Studio-Advertisement-page/preview/classified/ |
+
+(Both served from this repo — GitHub Pages on the free plan requires the repo to be
+public; the site content is public anyway once it's served.)
+
 Pure static files — no build step.
 
 ```bash
